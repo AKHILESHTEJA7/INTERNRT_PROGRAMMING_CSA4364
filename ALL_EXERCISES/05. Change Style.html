@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling Example</title>
+    <style>
+        .original-style {
+            background-color: red;
+            color: blue;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .changed-style {
+            background-color: green;
+            color: yellow;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p id="textMessage" class="original-style">SIR, THIS IS THE TEXT MESSAGE.</p>
+    <button onclick="changeStyle()">Click me to change style</button>
+    <script>
+        function changeStyle() {
+            var textMessage = document.getElementById('textMessage');
+            if (textMessage.classList.contains('original-style')) {
+                textMessage.classList.remove('original-style');
+                textMessage.classList.add('changed-style');
+            } else {
+                textMessage.classList.remove('changed-style');
+                textMessage.classList.add('original-style');
+            }
+        }
+    </script>
+</body>
+</html>
