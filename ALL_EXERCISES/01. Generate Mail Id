@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body{
+            background-color: rgb(87, 240, 240);
+            
+        }
+        #firstName{
+            border-radius: 6px;
+            padding: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">E-Mail-ID Generating Form</h2>
+    <hr>
+    <form style="margin-left: 30%;">
+        <label for="firstName">Enter your first name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Enter your last name (optional):</label>
+        <input type="text" id="firstName" name="lastName"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="firstName"><br><br>
+
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label><br><br>
+
+        <label for="email">Write your email address:</label>
+        <input type="text" id="firstName" name="email" required>
+        <span>@gmail.com</span> <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="firstName" name="password" required><br><br>
+
+        <label for="confirmPassword">Re-enter password:</label>
+        <input type="password" id="firstName" name="confirmPassword" required><br><br>
+
+        <label for="phone">Phone number:</label>
+        <input type="number" id="firstName" name="phone" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="firstName" name="address" rows="4" cols="25" required></textarea><br><br>
+
+        <label for="country">Country:</label>
+        <select id="firstName" name="country" required>
+            <option value="indian">others</option>
+            <option value="indian">india</option>
+
+        </select><br><br>
+
+        <label for="state">State:</label>
+        <select id="firstName" name="state" required>
+            <option value="">Telengana</option>
+            <option value="">Karnataka</option>
+            <option value="">Andhra Pradesh</option>
+            <option value="">Tamil nadu</option>
+            <option value="">Kerala</option>
+        </select><br><br>
+
+        <label>Languages known:</label>
+        <label><input type="checkbox" name="language" value="english"> English</label>
+        <label><input type="checkbox" name="language" value="spanish"> Telugu</label>
+        <label><input type="checkbox" name="language" value="spanish"> Tamil</label>
+        <label><input type="checkbox" name="language" value="french"> Hindi</label><br><br>
+        <button onclick="" type="submit" style="background-color: rgb(21, 155, 0); padding: 10px 50px; font-size: 16px; border-style: none; border-radius: 12px;">Submit</button>
+    </form>
+</body>
+</html>
