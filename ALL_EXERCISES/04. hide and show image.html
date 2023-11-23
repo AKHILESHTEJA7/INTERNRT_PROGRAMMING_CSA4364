@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide Image</title>
+    <style>
+        #myImage {
+            display: none; /* Initially hide the image */
+        }
+    </style>
+</head>
+<body>
+<h2 id="naa">Show/Hide Image</h2>
+<button onclick="toggleImage()">Toggle Image</button>
+<img id="myImage" src="https://img.freepik.com/premium-photo/peacock-with-green-background-blue-tail-4k-high-resolution_912787-35.jpg" alt="My Image">
+<script>
+    function toggleImage() {
+        var image = document.getElementById("myImage");
+        if (image.style.display === "none") {
+            image.style.display = "block";
+            document.getElementById("naa").innerHTML="Showing";
+        } else {
+            image.style.display = "none";
+            document.getElementById("naa").innerHTML="Hiding";
+        }
+    }
+</script>
+</body>
+</html>
